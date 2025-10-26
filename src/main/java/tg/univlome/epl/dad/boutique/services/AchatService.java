@@ -14,7 +14,7 @@ import tg.univlome.epl.dad.boutique.models.Achat;
 
 public final class AchatService {
 
-    private static final AchatService instance = new AchatService();
+    private static final AchatService instance = new AchatService() ; 
     private List<Achat> listes = new ArrayList<>();
 
     private AchatService() {}
