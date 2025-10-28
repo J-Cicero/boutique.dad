@@ -52,5 +52,10 @@ public final class AchatService {
     public List<Achat> lister() {
         return listes;
     }
+    
+    
+     public int count(){
+         return listes.size();
+     }
 }
 

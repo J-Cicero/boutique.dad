@@ -53,5 +53,9 @@ public final class ProduitService {
     public List<Produit> lister() {
         return listes;
     }
+    
+    public int count(){
+         return listes.size();
+    }
 }
 

@@ -24,7 +24,6 @@ import tg.univlome.epl.dad.boutique.services.ProduitService;
 public class boutique {
 
  public static void main(String[] args) {
-        System.out.println("=== Test des services CRUD ===");
 
         Produit p1 = new Produit(1, "Café", 1500, LocalDate.of(2025, 12, 31));
         Produit p2 = new Produit(2, "Thé", 1000, LocalDate.of(2025, 11, 30));
@@ -35,14 +34,14 @@ public class boutique {
 
         System.out.println("Liste des produits : " + produitService.lister());
 
-        p1.setPrixUnitaire(1600);
-        produitService.modifier(p1);
-        System.out.println("Produit modifié : " + produitService.trouver(1).getPrixUnitaire());
+        //p1.setPrixUnitaire(1600);
+        //produitService.modifier(p1);
+        //System.out.println("Produit modifié : " + produitService.trouver(1).getPrixUnitaire());
 
-        produitService.supprimer(p2);
-        System.out.println("Liste après suppression : " + produitService.lister());
+        //produitService.supprimer(p2);
+        //System.out.println("Liste après suppression : " + produitService.lister());
 
-        Client c1 = new Client(1, "Doe", "John");
+      /*  Client c1 = new Client(1, "Doe", "John");
         Client c2 = new Client(2, "Smith", "Anna");
 
         ClientService clientService = ClientService.getInstance();
@@ -79,5 +78,6 @@ public class boutique {
         a1.setProduitAchetes(Arrays.asList(pa1, pa2));
 
         System.out.println("Liste des produits achetés pour a1 : " + a1.getProduitAchetes());
+        */
     }
 }

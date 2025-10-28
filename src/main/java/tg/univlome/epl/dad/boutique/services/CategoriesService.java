@@ -51,4 +51,8 @@ public final class CategoriesService {
     public List<Categories> lister() {
         return listes; 
     } 
+    
+    public int count(){
+         return listes.size();
+     }
 }

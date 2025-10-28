@@ -15,6 +15,7 @@ public class ProduitAchete {
     private Integer id;
     private double remise;
     private Achat achat;
+    private Produit produit;
 
     public ProduitAchete(Integer id, double remise, Achat achat) {
         this.id = id;
@@ -22,11 +23,21 @@ public class ProduitAchete {
         this.achat = achat;
     }
 
-    public Integer getNumero() {
+    public Produit getProduit() {
+        return produit;
+    }
+
+    public void setProduit(Produit produit) {
+        this.produit = produit;
+    }
+    
+    
+
+    public Integer getId() {
         return id;
     }
 
-    public void setNumero(Integer numero) {
+    public void setId(Integer numero) {
         this.id = numero;
     }
 

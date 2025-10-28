@@ -52,5 +52,10 @@ public final class ClientService {
     public List<Client> lister() {
         return listes;
     }
+    
+    public int count(){
+       return listes.size();
+    }
+    
 }
 

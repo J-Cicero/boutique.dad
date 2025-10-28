@@ -42,7 +42,7 @@ public final class ProduitAcheteService {
 
     public ProduitAchete trouver(Integer id) {
         for (ProduitAchete pa : listes) {
-            if (pa.getNumero().equals(id)) {
+            if (pa.getId().equals(id)) {
                 return pa;
             }
         }
@@ -52,4 +52,8 @@ public final class ProduitAcheteService {
     public List<ProduitAchete> lister() {
         return listes;
     }
+    
+    public int count(){
+         return listes.size();
+     }
 }

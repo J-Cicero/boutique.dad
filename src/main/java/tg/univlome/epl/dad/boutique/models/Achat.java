@@ -77,6 +77,29 @@ public class Achat {
         this.produitAchetes = produitAchetes;
     }
 
+    public double getRemiseTotale() {
+        double totalRemise = 0;
+        if (produitAchetes != null) {
+            for (ProduitAchete p : produitAchetes) {
+                totalRemise += p.getRemise();
+            }
+        }
+        return totalRemise;
+    }
+
+
+    public double getTotalAPayer() {
+        double total = 0;
+        if (produitAchetes != null) {
+            for (ProduitAchete p : produitAchetes) {
+                total += p.getProduit().getPrixUnitaire() - p.getRemise();
+            }
+        }
+        // Application de la remise globale de l'achat
+        total -= remise;
+        return total;
+    }
+    
     @Override
     public int hashCode() {
         int hash = 3;

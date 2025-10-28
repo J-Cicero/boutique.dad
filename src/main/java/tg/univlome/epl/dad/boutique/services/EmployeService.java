@@ -52,5 +52,9 @@ public final class EmployeService {
     public List<Employe> lister() {
         return listes;
     }
+    
+    public int count(){
+         return listes.size();
+     }
 }
 
